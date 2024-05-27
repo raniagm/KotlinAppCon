@@ -39,7 +39,7 @@ class AddContractActivity : AppCompatActivity() {
             val contractAgent = contractAgentEditText.text.toString()
             val contractClient = contractClientEditText.text.toString()
             Log.i("ContractDetails", "Number: $contractNumber, Type: $contractType, Validity: $contractValidity, Value: $contractValue, Agent: $contractAgent, Client: $contractClient")
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, ClientSpace::class.java)
             startActivity(intent)
             // Finish current activity to prevent going back to it when pressing back button from MainActivity
             finish()

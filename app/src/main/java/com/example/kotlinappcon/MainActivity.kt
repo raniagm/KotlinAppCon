@@ -34,8 +34,8 @@ class MainActivity : AppCompatActivity() {
             // Here you can add your authentication logic
             // For now, let's assume the credentials are valid
             if (isValidCredentials(username, password)) {
-                // Navigate to AddContractActivity after successful login
-                val intent = Intent(this, AddContractActivity::class.java)
+                // Navigate to ClientSpace after successful login
+                val intent = Intent(this, ClientSpace::class.java)
                 startActivity(intent)
             } else {
                 // Handle invalid credentials, show error message, etc.
